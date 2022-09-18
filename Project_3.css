@@ -1,0 +1,99 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+.plug:hover {
+    opacity: 0.7;
+}
+.easy_copy:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+.tooltip {
+    background: peachpuff;
+    color: grey;
+}
+.link_btn {
+    border: 2px solid black;
+    border-color:white;
+    /*background-color: inherit;*/
+    padding: 14px 28px;
+    cursor: pointer;
+    display: inline-block;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-instagram {
+    background: #E4405F;
+    color: white;
+}
+.fa-reddit {
+    background: #FF4500;
+    color: white;
+}
+.fa-linkedin {
+    background: #125688;
+    color: white;
+}
+.link_btn:hover {
+    background: #c5c5c5;
+    color: #3f3f3f !important;
+}
+
+#Section1 {
+    height: 600px;
+    overflow: auto;
+    background-color: black;
+    font-family: OCR A Std, monospace;
+}
+#Section2 {
+    height: 600px;
+    font-family: OCR A Std, monospace;
+    filter: blur(100px);
+    overflow: auto;
+    background-color: #808080;
+}
+#Section3 {
+    height: 600px;
+    filter: blur(100px);
+    font-family: OCR A Std, monospace;
+    overflow: auto;
+    width: 100%;
+    background-color: #696969;
+}
+#Section4 {
+    height: 600px;
+    filter: blur(100px);
+    font-family: OCR A Std, monospace;
+    overflow: auto;
+    width: 100%;
+    background-color: #232323;
+}
+#Section5 {
+    height: 700px;
+    filter: blur(100px);
+    font-family: OCR A Std, monospace;
+    overflow: auto;
+    width: 100%;
+    background-color: #7f7d9c;
+}
+#Section6 {
+    height: 600px;
+    filter: blur(100px);
+    font-family: OCR A Std, monospace;
+    overflow: auto;
+    width: 100%;
+    background-color: #373737;
+}

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+        <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">-->
+        <link rel="stylesheet" href="Project_3.css"/> 
+        <link rel="icon" type="image/x-icon" href="hell_girl.ico">
+        <title>Who am I?</title>
+    </head>
+    <body onload="unblur('Section1', 's1')">
+    <div id="Section1" style="text-align:center">
+        <br>
+        <h1 id="s1" style="color:white; font-size: 350%;"></h1>
+        <p id="s2" style="color:white; text-align:center; font-size: 200%;"></p>
+        <br>
+        <a class="link_btn" style="color:white; text-decoration: none;" href="#Section2" onclick="unblur('Section2', 's3');">Next</a>
+    </div>
+    <div id="Section2" style="text-align:center">
+        <br>
+        <h2 id="s3" style="text-align:center"></h2>
+        <p id="s4" style="text-align:center; font-size: 125%;"></p>
+        <p id="s5" style="text-align:center; font-size: 125%;"></p>
+        <p id="s6" style="text-align:center; font-size: 125%;"></p>
+        <a class="link_btn" style="color:black; text-align:center; text-decoration: none;" href="#Section3" onclick="unblur('Section3', 's7');">Next</a>
+    </div>
+    <div id="Section3" style="text-align:center">
+        <br>
+        <h2 id="s7" style="text-align:center"></h2>
+        <p id="s8" style="text-align:center; font-size: 125%;"></p>
+        <p id="s9" style="text-align:center;"></p>
+        <p id="s10" style="text-align:center;"></p>
+        <p id="s11" style="text-align:center;"></p>
+        <br>
+        <p id="s12" style="text-align:center; font-size: 125%;"></p>
+        <p id="s13" style="text-align:center;"></p>
+        <p id="s14" style="text-align:center;"></p>
+        <p id="s15" style="text-align:center;"></p>
+        <p id="s16" style="text-align:center;  font-size: 125%;"></p>
+        <a id="s17" class="plug" href="https://myanimelist.net/profile/Pikastunner" target="_blank" style="color:cyan; text-align:center; font-size: 125%; text-decoration: none;"></a>
+        <br><br>
+        <a class="link_btn" style="color:black; text-align:center; text-decoration: none;" href="#Section4" onclick="unblur('Section4', 's18');">Next</a>
+    </div>
+    <div id="Section4" style="text-align:center">
+        <br>
+        <h2 id="s18" style="color:white;text-align:center"></h2>
+        <p id="s19" style="color:white;text-align:center; font-size: 125%;"></p>
+        <p id="s20" style="color:white;text-align:center; font-size: 125%;"></p>
+        <a id="s21" class="plug" href="https://oce.op.gg/summoner/userName=Pikastunner" target="_blank" style="color:cyan; text-align:center; font-size: 125%; text-decoration: none;"></a>
+        <p id="s22" style="color:white;text-align:center; font-size: 125%;"></p>
+        <p id="s23" style="color:white;text-align:center; font-size: 125%;"></p>
+        <a id="s24" class="plug" href="https://paladins.guru/profile/3904650-Pikastunner" target="_blank" style="color:cyan;text-align:center; font-size: 125%; text-decoration: none;"></a>
+        <p id="s25" style="color:white;text-align:center;font-size: 125%;"></p>
+        <p id="s26" style="color:white;text-align:center;font-size: 125%;"></p>
+        <a id="s27" class="easy_copy" style="color:peachpuff;text-align:center;font-size: 125%;" onclick="copyText();" title="Click to copy"></a>
+
+        <br><br>
+        <a class="link_btn" style="color:white; text-align:center; text-decoration: none;" href="#Section5" onclick="unblur('Section5', 's28');">Next</a>
+    </div>
+    <div id="Section5" style="text-align:center">
+        <br>
+        <h2 id="s28" style="text-align:center"></h2>
+        <p id="s29" style="text-align:center; font-size: 125%;"></p>
+        <p id="s30" style="text-align:center; font-size: 125%;"></p>
+        <p id="s31" style="text-align:center; font-size: 125%;"></p>
+        <a id="s32" class="plug" href="https://pikastunner.github.io/Jigoku_tsushin/" target="_blank" style="color:cyan;text-align:center; font-size: 125%; text-decoration: none;"></a>
+        <p id="s33" style="text-align:center; font-size: 125%;"></p>
+        <p id="s34" style="text-align:center; font-size: 125%;"></p>
+        <a id="s35" class="plug" href="https://pikastunner.github.io/drawings/" target="_blank" style="color:cyan;text-align:center; font-size: 125%; text-decoration: none;"></a>
+        <p id="s36" style="text-align:center;font-size: 125%;"></p>
+        <a id="s37" class="plug" href="https://github.com/Pikastunner" target="_blank" style="color:cyan;text-align:center; font-size: 125%; text-decoration: none;"></a>
+        <p id="s38" style="text-align:center;font-size: 125%;"></p>
+        <a id="s39" class="plug" href="https://leetcode.com/dentontran1234/" target="_blank" style="color:cyan;text-align:center; font-size: 125%; text-decoration: none;"></a>
+        <br><br>
+        <a class="link_btn" style="color:black; text-align:center; text-decoration: none;" href="#Section6" onclick="unblur('Section6', 's40');">Next</a>
+    </div>
+
+    <div id="Section6" style="text-align:center">
+        <br>
+        <h3 id='s40' style="color:white;"></h3>
+        <p id='s41' style="color:white;"></p>
+        <a href="https://www.instagram.com/blobritoz/" target="_blank" class="fa fa-instagram"></a>
+        <a href="https://www.reddit.com/user/Pikastunner" target="_blank" class="fa fa-reddit"></a>
+        <a href="https://www.linkedin.com/in/denton-tran-477060246" target="_blank" class="fa fa-linkedin"></a>
+
+        <!--<a href="https://www.discordapp.com/users/292241684899692545/" class="fa fa-discord"></a>-->
+        <!--<a href="https://www.instagram.com/blobritoz/" class="fa fa-instagram"></a>-->
+        <br><br>
+        <a class="link_btn" style="color:white; ; text-decoration: none;" href="#Section1" onclick="restart();">Restart</a>
+    </div>
+    <script>
+        $(function() {
+            $("#s27").tooltip({
+                position: {
+                    my: "left+15 center",
+                    at: "right center"
+                }
+                ,
+                classes: {
+                    'ui-tooltip': 'tooltip'
+                }
+            });     
+        });
+    </script>
+    <script>
+        //document.getElementById("Section1").style.height = "400px";
+        function copyText() {
+            navigator.clipboard.writeText( "SW-4568-6074-5409");
+        }
+        function unblur(section, text_id) {
+            if (document.getElementById(text_id).innerHTML == "") {
+                document.getElementById(section).style.filter = "blur(0px)";
+                var all_text = {"Section1": ["s1", "s2"]
+                , "Section2" : ["s3", "s4", "s5", "s6"]
+                , "Section3": ["s7", "s8", "s9", "s10", "s11", "s12", "s13", "s14", "s15", "s16", "s17"]
+                , "Section4": ["s18", "s19", "s20", "s21", "s22", "s23", "s24", "s25", "s26", "s27"]
+                , "Section5": ["s28", "s29", "s30", "s31", "s32", "s33", "s34", "s35", "s36", "s37", "s38", "s39"]
+                , "Section6": ["s40", "s41"]};
+
+                var section_text = {"s1":"Welcome I am Denton "
+                    , "s2": "Click next to learn more about me"
+
+                    , "s3": "What I do for fun"
+                    , "s4": "I watch anime"
+                    , "s5": "I play games"
+                    , "s6": "I like coding and putting ideas into practice"
+
+                    , "s7": "What animes do I watch"
+                    , "s8": "My top three animes are: "
+                    , "s9": "1st: Beelzebub"
+                    , "s10": "2nd: Great Teacher Onizuka"
+                    , "s11": "3rd: Welcome to NHK"
+                    , "s12": "My favourite genres of anime are: "                    
+                    , "s13": "Comedy"
+                    , "s14": "Coming-of-age"
+                    , "s15": "Psychological"
+                    , "s16": "If you want to find out more, here is my MyAnimeList"
+                    , "s17": "https://myanimelist.net/profile/Pikastunner"
+
+                    , "s18": "What games do I play"
+                    , 's19': "Nowadays, I mostly play league of legends and I main amumu jungle"
+                    , 's20': "Check out my league profile on op.gg"
+                    , 's21': "https://oce.op.gg/summoner/userName=PIkastunner"
+                    , 's22': "I used to play Paladins quite a bit before I got into league"
+                    , 's23': "Check out my paladins profile if you are interested"
+                    , 's24': "https://paladins.guru/profile/3904650-Pikastunner"
+                    , 's25': "I'm pretty fond of Pokemon and am occasionally playing Pokemon Sword"
+                    , 's26': "Here is my friend code:"
+                    , 's27': "SW-4568-6074-5409"
+
+                    , 's28': "I like making stuff on a whim"
+                    , 's29': "I am starting from scratch in learning web development"
+                    , 's30': "My very first website I made was a replicated copy of Hell Link inspired by the anime Jigoku Shoujo"
+                    , 's31': "Check it out here:"
+                    , 's32': "https://pikastunner.github.io/Jigoku_tsushin/"
+                    , 's33': "Another website I made was an anthology of anime sketches that I do as recreation"
+                    , 's34': "Check it out here:"
+                    , 's35': "https://pikastunner.github.io/drawings/"
+                    , 's36': "For future update of other websites/projects that I am doing or are up, you can check it out on my github account here"
+                    , 's37': "https://github.com/Pikastunner"
+                    , 's38': "I sporadically will go on leetcode and do a few questions to keep my mind refreshed on algorithms and you can check it out here"
+                    , 's39': "https://leetcode.com/dentontran1234/"
+
+                    , "s40": "That's everything about me"
+                    , "s41": "Here are my contacts. You can contact me anytime."
+                };
+                //var all_text = ["Hello I am me", "These are my hobbies", "Thats everything about me"];
+                //var index = text_id[1] - 1;
+                //var text = all_text[index];
+                var show = all_text[section];
+                for (var i = 0; i < show.length; i ++) {
+                    var text = section_text[all_text[section][i]];
+                    typeWrite(all_text[section][i], text, 0);
+                }
+            }
+        }
+        function restart() {
+            // Number of sections
+            for (var i = 2; i < 7; i ++) {
+                var idname = "Section" + String(i);
+                var text_id = "s" + String(i);
+                document.getElementById(text_id).innerHTML = "";
+                document.getElementById(idname).style.filter = "blur(100px)";
+            }
+            // Number of texts
+            for (var i = 3; i < 42; i ++) {
+                var text_id = "s" + String(i);
+                document.getElementById(text_id).innerHTML = "";
+            }
+            //alert("WORKS");
+            document.getElementById("s1").innerHTML = "";
+            //var all_text = ["Hello I am me", "These are my hobbies", "Thats everything about me"];
+            //typeWrite('s1', all_text[0], 0);
+            unblur("Section1", "s1");
+        }
+        function typeWrite(text_id, text, i) {
+            if (i < text.length) {
+                document.getElementById(text_id).innerHTML += text.charAt(i);
+                i += 1;
+                setTimeout(function() { 
+                    typeWrite(text_id, text, i); 
+                }, 50);
+            }
+        }
+    </script>
+    </body>
+</html>
